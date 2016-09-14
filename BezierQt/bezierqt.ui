@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>BezierQtClass</class>
+ <widget class="QMainWindow" name="BezierQtClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>948</width>
+    <height>658</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>BezierQt</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <layout class="QHBoxLayout" name="mainLayout"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>948</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFichier">
+    <property name="title">
+     <string>Actions globales</string>
+    </property>
+    <addaction name="actionNouveau"/>
+    <addaction name="newPointControlGroup"/>
+    <addaction name="actionCornerCutting"/>
+    <addaction name="separator"/>
+    <addaction name="actionChanger_le_pas"/>
+    <addaction name="actionQuitter"/>
+   </widget>
+   <widget class="QMenu" name="menuOptions">
+    <property name="title">
+     <string>Options locales</string>
+    </property>
+    <addaction name="actionChanger_la_couleur"/>
+    <addaction name="actionParametrage"/>
+    <addaction name="actionTransformation"/>
+    <addaction name="actionRaccordement"/>
+   </widget>
+   <addaction name="menuFichier"/>
+   <addaction name="menuOptions"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="newPointControlGroup">
+   <property name="text">
+    <string>Ajouter des points de contrôle</string>
+   </property>
+   <property name="toolTip">
+    <string>Créer des nouveaux points de contrôle</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+A</string>
+   </property>
+  </action>
+  <action name="actionQuitter">
+   <property name="text">
+    <string>Quitter</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Q</string>
+   </property>
+  </action>
+  <action name="actionChanger_le_pas">
+   <property name="text">
+    <string>Changer le pas</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+P</string>
+   </property>
+  </action>
+  <action name="actionChanger_la_couleur">
+   <property name="text">
+    <string>Changer la couleur</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+C</string>
+   </property>
+  </action>
+  <action name="actionTransformation">
+   <property name="text">
+    <string>Transformation</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+T</string>
+   </property>
+  </action>
+  <action name="actionRaccordement">
+   <property name="text">
+    <string>Raccordement</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+R</string>
+   </property>
+  </action>
+  <action name="actionCornerCutting">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Corner Cutting</string>
+   </property>
+   <property name="toolTip">
+    <string>Technique Corner Cutting</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+A</string>
+   </property>
+  </action>
+  <action name="actionNouveau">
+   <property name="text">
+    <string>Nouveau/Effacer</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+N</string>
+   </property>
+  </action>
+  <action name="actionParametrage">
+   <property name="text">
+    <string>Espace paramétrage</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+E</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="bezierqt.qrc"/>
+ </resources>
+ <connections/>
+</ui>
